@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Form, FormGroup, FormControl, FormLabel } from "react-bootstrap";
 import MemeItem from "./MemeItem";
+import MyMemes from './MyMemes';
 import "../styles/index.css";
 
 class App extends Component {
@@ -19,7 +20,9 @@ class App extends Component {
       <div>
         <h2>Meme Generator</h2>
         <hr />
-        <h4>Write Top and Buttom text for the Meme</h4>
+        <MyMemes />
+        <hr />
+        <h4>Write Top and Bottom text for the Meme</h4>
         <Form inline>
           <FormGroup>
             <FormLabel>Top</FormLabel>{" "}
